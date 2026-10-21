@@ -1,0 +1,43 @@
+/* The questions in part 1 have been answered in the code 
+
+when using the vector 
+
+A >>
+ MovingObject obj2(0.3, 0.4, 0);
+    std::cout << "obj2: " << obj2.Vx() << ", " << obj2.Vy() << ", " << obj2.Vz() << std::endl;
+
+    gives 
+    root [3]     std::cout << "obj2: " << obj2.Vx() << ", " << obj2.Vy() << ", " << obj2.Vz() << std::endl;
+    obj2: 0.3, 0.4, 0
+
+    gives
+    root [4]    obj2.Speed()
+                (double) 0.50000000
+
+ and 
+
+    root [5]     obj2.HorizontalSpeed()
+    (double) 0.50000000
+
+B >> 
+obj2.SetVelocity(0.3, 0.4 , 0.5);
+    std::cout << "obj2: " << obj2.Vx() << ", " << obj2.Vy() << ", " << obj2.Vz() << std::endl;
+
+    gives 
+    root [7]     std::cout << "obj2: " << obj2.Vx() << ", " << obj2.Vy() << ", " << obj2.Vz() << std::endl;
+    obj2: 0.3, 0.4, 0.5
+
+        now recalculating the speed gives: due to the added vz 
+    root [8]    obj2.Speed()
+    (double) 0.70710678
+
+        calculating the horizontal speed gives: this is not changed by the added vz direction since horizontal only takes the x and y direction 
+    root [8]    obj2.Speed()
+    (double) 0.70710678
+
+
+
+
+
+
+*/
